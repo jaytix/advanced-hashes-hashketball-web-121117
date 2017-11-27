@@ -191,6 +191,7 @@ def player_numbers(teamName)
             playerStats.each do |oneStat|
               #binding.pry
               if oneStat.is_a?
+                oneStat.each do |statss|
                 binding.pry
                 if statss == :number
                   array.push(oneStat[:number])
