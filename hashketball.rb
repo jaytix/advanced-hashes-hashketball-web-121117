@@ -190,7 +190,9 @@ def player_numbers(teamName)
             #binding.pry
             playerStats.each do |oneStat|
               binding.pry
-              array.push(oneStat[:number])
+              oneStat.each do |statss|
+                if statss == :number
+                  array.push(oneStat[:number])
               #binding.pry
 
             #if stats == :number
