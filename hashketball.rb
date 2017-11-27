@@ -200,3 +200,16 @@ def player_numbers(teamName)
 
   return array
 end
+
+def player_stats(player)
+  hash = game_hash
+  hash.each do |teams, team|
+    team[:players].keys.each do |person|
+      if player == person
+        return team[:players][person]
+          
+        end
+      end
+    end
+  end
+end
