@@ -170,7 +170,7 @@ def team_names
   hash.each do |teams, team|
     team.each do |stats|
       stats.each do |oneStat|
-        #binding.pry
+        binding.pry
         if teamName == oneStat
           return team[:colors]
         end
