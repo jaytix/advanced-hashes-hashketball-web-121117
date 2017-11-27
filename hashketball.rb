@@ -181,6 +181,7 @@ def team_names
 end
 
 def player_numbers(teamName)
+  array = []
   hash = game_hash
   hash.each do |teams, team|
     team.values.each do |statsArray|
