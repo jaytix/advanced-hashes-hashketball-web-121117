@@ -153,7 +153,7 @@ end
 def team_colors(player)
   hash = game_hash
   hash.each do |teams, team|
-    binding.pry
+    #binding.pry
     return team[:colors].keys
     end
   end
