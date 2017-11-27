@@ -153,6 +153,7 @@ end
 def team_colors(player)
   hash = game_hash
   hash.each do |teams, team|
+    binding.pry
     team[:players].keys.each do |person|
       if player == person
         team[:players][person].keys.each do |stats|
