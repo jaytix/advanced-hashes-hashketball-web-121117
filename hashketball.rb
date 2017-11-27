@@ -170,7 +170,7 @@ def team_names
   hash.each do |teams, team|
     team.each do |stats|
       stats.each do |oneStat|
-        binding.pry
+        #binding.pry
         if :team_name == oneStat
           array.push(stats[1])
         end
