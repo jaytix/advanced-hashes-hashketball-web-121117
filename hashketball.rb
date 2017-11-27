@@ -208,7 +208,7 @@ def player_stats(player)
       if player == person
         return team[:players][person]
           
-        end
+      
       end
     end
   end
