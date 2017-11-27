@@ -120,13 +120,9 @@ return teams
 end
 
 def num_points_scored(player)
-  #binding.pry
   hash = game_hash
-  #binding.pry
   hash.each do |teams, team|
-    #binding.pry
     team[:players].keys.each do |person|
-      #binding.pry
       if player == person
         team[:players][person].keys.each do |stat|
           binding.pry
