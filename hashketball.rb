@@ -184,6 +184,7 @@ def player_numbers(teamName)
   hash = game_hash
   hash.each do |teams, team|
     team[:players].keys.each do |person|
+      binding.pry
       if player == person
         team[:players][person].keys.each do |stats|
           if stats == :number
