@@ -163,3 +163,18 @@ def team_colors(teamName)
     end
   end
 end
+
+def team_names
+  array = []
+  hash = game_hash
+  hash.each do |teams, team|
+    team.each do |stats|
+      stats.each do |oneStat|
+        #binding.pry
+        if teamName == oneStat
+          return team[:colors]
+        end
+      end
+    end
+  end
+end
