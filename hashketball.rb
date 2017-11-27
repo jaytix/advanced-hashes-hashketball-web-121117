@@ -211,3 +211,19 @@ def player_stats(player)
     end
   end
 end
+
+def big_shoe_rebounds
+  largestShoe = 0
+  hash = game_hash
+  hash.each do |teams, team|
+    team[:players].keys.each do |person|
+      if player == person
+        team[:players][person].keys.each do |stats|
+          if stats == :shoe
+            return team[:players][person][stats].to_i
+          end
+        end
+      end
+    end
+  end
+end
