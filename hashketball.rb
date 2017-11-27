@@ -194,7 +194,7 @@ def player_numbers(teamName)
 
             #if stats == :number
             #  array.push(team[:players][person][stats].to_i)
-            end
+            #end
           end
         end
       end
