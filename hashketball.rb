@@ -171,7 +171,7 @@ def team_names
     team.each do |stats|
       stats.each do |oneStat|
         binding.pry
-        if teamName == oneStat
+        if :team_name == oneStat
           return team[:colors]
         end
       end
