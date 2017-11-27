@@ -190,7 +190,7 @@ def player_numbers(teamName)
             #binding.pry
             playerStats[:number].each do |oneStat|
               binding.pry
-              
+
             if stats == :number
               array.push(team[:players][person][stats].to_i)
             end
