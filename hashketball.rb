@@ -223,7 +223,8 @@ def big_shoe_rebounds
           binding.pry
           if stats == :shoe
             #binding.pry
-            return team[:players][person][stats].to_i
+            if largestShoe < team[:players][person][stats].to_i
+              largestShoe = team[:players][person][stats].to_i
           #end
         end
       end
