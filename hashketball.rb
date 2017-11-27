@@ -183,10 +183,11 @@ end
 def player_numbers(teamName)
   hash = game_hash
   hash.each do |teams, team|
-    team[:players].keys.each do |person|
+    team.values.each do |statsArray|
       binding.pry
-      if player == person
-        team[:players][person].keys.each do |stats|
+      statsArray.each do |oneStat|
+        if oneStat == teamName
+          team[:players][person].keys.each do |stats|
           if stats == :number
             array.push(team[:players][person][stats].to_i)
           end
