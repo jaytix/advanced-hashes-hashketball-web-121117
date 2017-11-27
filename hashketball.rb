@@ -223,7 +223,7 @@ def big_shoe_rebounds
         team[:players][person].keys.each_with_index do |stats, i|
           #binding.pry
           if stats == :shoe
-            binding.pry
+            #binding.pry
             if largestShoe < team[:players][person][stats].to_i
               largestShoe = team[:players][person][stats].to_i
               personWithLargestShoe = team[:players][i]
