@@ -124,9 +124,9 @@ def num_points_scored(player)
   hash.each do |teams, team|
     team[:players].keys.each do |person|
       if player == person
-        team[:players][person].keys.each do |stat|
+        team[:players][person].keys.each do |stats|
           binding.pry
-        return team[:points][person][stat].to_s
+        return team[:points][person][stats].to_s
         end
       end
     end
