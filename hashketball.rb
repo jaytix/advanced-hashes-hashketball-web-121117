@@ -177,4 +177,5 @@ def team_names
       end
     end
   end
+  return array
 end
