@@ -186,7 +186,7 @@ def player_numbers(teamName)
   hash.each do |teams, team|
     team.values.each do |statsArray|
       statsArray.each do |oneStat|
-        pry
+        binding.pry
         if oneStat == teamName
           team[:players][person].keys.each do |stats|
             binding.pry
