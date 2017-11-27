@@ -189,8 +189,9 @@ def player_numbers(teamName)
       statsArray.each do |oneStat|
         if oneStat == teamName
           team[:players][person].keys.each do |stats|
-          if stats == :number
-            array.push(team[:players][person][stats].to_i)
+            if stats == :number
+              array.push(team[:players][person][stats].to_i)
+            end
           end
         end
       end
