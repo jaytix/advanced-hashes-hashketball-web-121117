@@ -232,11 +232,13 @@ def big_shoe_rebounds
       end
     end
   end
-  team[:players].keys.each do |person|
-    if personWithLargestShoe == person
-      team[:players][person].keys.each do |stats|
-        if stats == :rebounds
-          return team[:players][person][stats].to_i
+  hash.each do |teams, team|
+    team[:players].keys.each do |person|
+      if personWithLargestShoe == person
+        team[:players][person].keys.each do |stats|
+          if stats == :rebounds
+            return team[:players][person][stats].to_i
+          end  
         end
       end
     end
