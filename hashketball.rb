@@ -189,7 +189,7 @@ def player_numbers(teamName)
           team[:players].each do |playerStats|
             #binding.pry
             playerStats.each do |oneStat|
-              binding.pry
+              #binding.pry
               oneStat.is_a?(object) do |statss|
                 binding.pry
                 if statss == :number
