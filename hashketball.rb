@@ -223,7 +223,7 @@ def big_shoe_rebounds
           if stats == :shoe
             #binding.pry
             return team[:players][person][stats].to_i
-          end
+          #end
         end
       end
     end
