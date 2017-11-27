@@ -127,9 +127,10 @@ def num_points_scored(player)
         team[:players][person].keys.each do |stats|
         #  binding.pry
           if stats == :points
-        return team[:points][person][stats].to_s
+            return team[:points][person][stats].to_s
+          end
         end
       end
     end
-  end
+  end  
 end
