@@ -186,7 +186,6 @@ def player_numbers(teamName)
   hash.each do |teams, team|
     team.values.each do |statsArray|
         if statsArray == teamName
-          binding.pry
           team[:players].each do |stats|
             binding.pry
             if stats == :number
