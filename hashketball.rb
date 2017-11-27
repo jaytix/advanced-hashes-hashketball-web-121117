@@ -172,7 +172,7 @@ def team_names
       stats.each do |oneStat|
         binding.pry
         if :team_name == oneStat
-          return team[:colors]
+          array.push(stats[1])
         end
       end
     end
