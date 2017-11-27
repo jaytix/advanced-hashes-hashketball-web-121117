@@ -186,10 +186,11 @@ def player_numbers(teamName)
   hash.each do |teams, team|
     team.values.each do |statsArray|
         if statsArray == teamName
-          team[:players].each do |stats|
+          team[:players].each do |playerStats|
             #binding.pry
-            stats.each do |oneStat|
+            playerStats[:number].each do |oneStat|
               binding.pry
+              
             if stats == :number
               array.push(team[:players][person][stats].to_i)
             end
