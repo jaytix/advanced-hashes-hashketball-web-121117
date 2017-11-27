@@ -191,8 +191,9 @@ def player_numbers(teamName)
             playerStats.each do |oneStat|
               #binding.pry
               if oneStat.class == Object
-                oneStat.each do |statss|
                 binding.pry
+                oneStat.each do |statss|
+                #binding.pry
                 if statss == :number
                   array.push(oneStat[:number])
               #binding.pry
