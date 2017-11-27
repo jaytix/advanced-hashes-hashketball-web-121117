@@ -207,8 +207,6 @@ def player_stats(player)
     team[:players].keys.each do |person|
       if player == person
         return team[:players][person]
-
-      
       end
     end
   end
