@@ -218,8 +218,8 @@ def big_shoe_rebounds
   hash.each do |teams, team|
     team[:players].keys.each do |person|
       if player == person
+        binding.pry
         team[:players][person].keys.each do |stats|
-          binding.pry
           if stats == :shoe
             #binding.pry
             return team[:players][person][stats].to_i
