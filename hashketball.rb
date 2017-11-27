@@ -219,8 +219,9 @@ def big_shoe_rebounds
     team[:players].keys.each do |person|
       if player == person
         team[:players][person].keys.each do |stats|
+          binding.pry
           if stats == :shoe
-            binding.pry
+            #binding.pry
             return team[:players][person][stats].to_i
           end
         end
