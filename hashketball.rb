@@ -189,8 +189,6 @@ def player_numbers(teamName)
           team[:players].each do |playerAndStats|
             playerStats = playerAndStats[1]
               binding.pry
-              if playerStats.class == Object
-                #binding.pry
                 playerStats.keys.each do |statss|
                 #binding.pry
                 if statss == :number
