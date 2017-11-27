@@ -217,10 +217,10 @@ def big_shoe_rebounds
   personWithLargestShoe = ""
   hash = game_hash
   hash.each do |teams, team|
-    team[:players].keys.each do |person|
+    team[:players].keys.each_with_index do |person, i|
       #if player == person
       #binding.pry
-        team[:players][person].keys.each_with_index do |stats, i|
+        team[:players][person].keys.each do |stats|
           #binding.pry
           if stats == :shoe
             binding.pry
