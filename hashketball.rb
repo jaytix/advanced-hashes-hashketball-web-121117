@@ -179,3 +179,20 @@ def team_names
   end
   return array
 end
+
+def player_numbers(teamName)
+  hash = game_hash
+  hash.each do |teams, team|
+    team[:players].keys.each do |person|
+      if player == person
+        team[:players][person].keys.each do |stats|
+          if stats == :number
+            array.push(team[:players][person][stats].to_i)
+          end
+        end
+      end
+    end
+  end
+
+  return array
+end
