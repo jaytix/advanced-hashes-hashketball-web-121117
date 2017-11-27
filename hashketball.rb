@@ -155,8 +155,9 @@ def team_colors(teamName)
   hash.each do |teams, team|
     binding.pry
     team.each do |stats|
-    if teamName == :team_name
-    return team[:colors]
+      if teamName == :team_name
+        return team[:colors]
+      end
     end
   end
 end
