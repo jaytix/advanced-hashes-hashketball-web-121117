@@ -188,22 +188,15 @@ def player_numbers(teamName)
         if statsArray == teamName
           team[:players].each do |playerAndStats|
             playerStats = playerAndStats[1]
-              #binding.pry
                 playerStats.keys.each do |justStats|
-                #binding.pry
                 if justStats == :number
                   array.push(playerStats[:number])
-              #binding.pry
-
-            #if stats == :number
-            #  array.push(team[:players][person][stats].to_i)
-            #  end
+                end
+              end
             end
           end
         end
       end
-    end
-  end
 
   return array
 end
